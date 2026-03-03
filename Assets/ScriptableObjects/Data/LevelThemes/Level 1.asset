@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dca3fa56ab006b49861a2706e95cca9, type: 3}
+  m_Name: Level 1
+  m_EditorClassIdentifier: 
+  levelThemeReference: {fileID: 11400000, guid: e6a61dfa5b958c3408fe9b565da74af4, type: 2}
+  backgroundMusic: {fileID: 11400000, guid: d6e923fd1344aca47b50e62e4e6580ad, type: 2}
+  playerFootstepSound: {fileID: 11400000, guid: 48159e80140b9ce46a359da4b5f17a49, type: 2}
+  blueEnemyFootstepSound: {fileID: 11400000, guid: f35877a422d35894ba87bcda11d9f973, type: 2}
+  redEnemyFootstepSound: {fileID: 11400000, guid: f552b17d987ebc742963b49b424a5b20, type: 2}
+  batEnemyFlySound: {fileID: 11400000, guid: 6739449fdfd62dd4a944902ab3801236, type: 2}

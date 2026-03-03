@@ -1,0 +1,79 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales de Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# Archivos del cache de usuario
+UserSettings/
+MemoryCaptures/
+
+# Compilación local
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Archivos de JetBrains Rider
+.idea/
+*.sln.iml
+
+# Unity Collaborate
+.collab/
+
+# Archivos del sistema operativo
+ehthumbs.db
+Icon?
+*.bak
+*.swp
+*.lock
+
+# Archivos de Visual Studio Code
+.vscode/
+.vs/
+
+# Archivos de construcción específicos por plataforma
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+*.mode1v3
+*.mode2v3
+*.pbxuser
+
+# Builds para Mac/Linux/Windows
+*.exe
+*.app
+*.dll
+*.dmg
+*.so
+*.zip
+*.tar.gz
+
+# Builds WebGL
+*.unityweb
+*.data
+*.mem
+*.wasm
+*.symbols.json
+
+# Unity Cloud Build
+.builds/
+
+# TextMesh Pro (si usas su sistema de generación de fuentes)
+TextMesh Pro/Fonts/*.asset
