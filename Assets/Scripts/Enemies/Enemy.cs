@@ -28,7 +28,7 @@ public abstract class Enemy : MonoBehaviour{
 
     private void OnCollisionEnter2D(Collision2D other){
         if(other.gameObject.TryGetComponent<Player>(out Player player)){
-            player.Death();
+            player.ReceiveDamage();
         }
     }
 

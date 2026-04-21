@@ -27,7 +27,7 @@ public class BackgroundMusic : MonoBehaviour{
     }
 
     public void PlayNextClip(){
-
+        Debug.Log($"Referencia: {musicReference} | Array: {musicReference?.SoundArray} | Clips: {musicReference?.SoundArray?.AudioClips}");
         currentClipIndex = (currentClipIndex + 1) % musicReference.SoundArray.AudioClips.Length;
         audioSource.clip = musicReference.SoundArray.AudioClips[currentClipIndex];
         audioSource.Play();

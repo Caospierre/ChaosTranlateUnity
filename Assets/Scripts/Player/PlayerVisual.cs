@@ -35,7 +35,7 @@ public class PlayerVisual : MonoBehaviour{
 
     public void Footstep(){
 
-        player.PlayFootstepSound();
+       // player.PlayFootstepSound();
 
     }
 

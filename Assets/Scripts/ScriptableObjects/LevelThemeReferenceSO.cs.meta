@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: d1d77af7964d2b84fb28f167fe57b828
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - backgroundMusicsReference: {fileID: 11400000, guid: 168cf9d15ab9de64e8c3f741a235e32f, type: 2}
+  - playerFootstepSoundReference: {fileID: 11400000, guid: 73e5cdf1d6bed8a4b9df55e8a6179f30, type: 2}
+  - blueEnemyFootstepSoundReference: {fileID: 11400000, guid: c95522c723f359644b90caff5d42a60c, type: 2}
+  - redEnemyFootstepSoundReference: {fileID: 11400000, guid: d41081d2aa69a6f4a96ebc4d13346322, type: 2}
+  - batEnemyFlySoundReference: {fileID: 11400000, guid: 7e59bc8bdcd55604291d0c4c82e1f6d7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,15 +1,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class PanelManager : Singleton<PanelManager>{
 
     [SerializeField] private UnityEvent lastPanelClosed;
+    [SerializeField] public PseudoKeyManager compiler;
+    [SerializeField] public GameObject keyPanel;
 
     private List<Panel> openPanels = new List<Panel>();
     private Dictionary<Panel, Panel> cachedPanels = new Dictionary<Panel, Panel>();
 
     private void Update(){
+        if(Input.GetKeyDown(KeyCode.C) && !compiler.IsFocused()){
+           compiler.gameObject.SetActive(!compiler.gameObject.activeSelf);
+           keyPanel.gameObject.SetActive(true);
+
+          
+           compiler.Clear();
+
+        }
 
         if(Input.GetKeyDown(KeyCode.Escape)){
             CloseLast();

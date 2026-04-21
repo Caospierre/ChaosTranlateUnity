@@ -5,6 +5,9 @@ public class Player : MonoBehaviour{
 
     public event Action<bool> OnDirectionChanged;
     public event Action<WalkSpeed> OnSpeedChanged;
+    [SerializeField] public PseudoKeyManager compiler;
+    [SerializeField] private bool openCompiler = false;
+    [SerializeField] private bool focus = false;
 
     [SerializeField] private float walkSpeed = 0.1f;
     [SerializeField] private float swimSpeed = 0.05f;
@@ -20,6 +23,9 @@ public class Player : MonoBehaviour{
 
     [SerializeField] private Transform shootPointRight;
     [SerializeField] private Transform shootPointLeft;
+    [SerializeField] private PlayerLife life;
+
+
 
     private float speed;
 
@@ -87,7 +93,36 @@ public class Player : MonoBehaviour{
     }
 
     private void Update(){
+        focus = compiler.IsFocused();
 
+         if ( focus)
+             return;
+
+
+         MovePlayer();
+
+
+    }
+    
+
+    public void PlayFootstepSound(){
+
+        if(moveMode == MoveMode.Walk && isGrounded){
+            audioSource.PlayOneShot(footstepSoundReference.SoundArray.AudioClips[UnityEngine.Random.Range(0, footstepSoundReference.SoundArray.AudioClips.Length)]);
+        }
+
+    }
+
+    public void SetSpawnPosition(Vector2 position){
+        spawnPosition = position;
+    }
+
+    public void EnemyKillJump(){
+        rb2d.linearVelocity = new Vector2(0, jumpForce / 2);
+    }
+
+    private void MovePlayer(){
+                
         if(Input.GetAxis("Horizontal") is not 0 and float val){
 
             OnDirectionChanged?.Invoke(val > 0);
@@ -154,27 +189,12 @@ public class Player : MonoBehaviour{
             }
 
         }
-
-    }
-
-    public void PlayFootstepSound(){
-
-        if(moveMode == MoveMode.Walk && isGrounded){
-            audioSource.PlayOneShot(footstepSoundReference.SoundArray.AudioClips[UnityEngine.Random.Range(0, footstepSoundReference.SoundArray.AudioClips.Length)]);
-        }
-
-    }
-
-    public void SetSpawnPosition(Vector2 position){
-        spawnPosition = position;
-    }
-
-    public void EnemyKillJump(){
-        rb2d.linearVelocity = new Vector2(0, jumpForce / 2);
-    }
-
+    }    
+    
     private void FixedUpdate(){
-
+        if (focus)
+            return;
+        
         if(moveMode == MoveMode.Swim)
             speed = swimSpeed;
         else
@@ -224,7 +244,23 @@ public class Player : MonoBehaviour{
         rb2d.linearVelocity = Vector2.zero;
 
     }
+    
+    public void ReceiveDamage()
+    {
+        HearthState currentState = life.GetCurrentState().getState();
 
+        switch (currentState)
+        {
+            case HearthState.Death:
+                life.ReceiveDamage();
+                Death();
+                break;
+
+            default:
+                life.ReceiveDamage();
+                break;
+        }
+    }
     private void SetGrounded(bool state){
 
         isGrounded = state;
@@ -234,7 +270,7 @@ public class Player : MonoBehaviour{
     private void OnTriggerEnter2D(Collider2D other){
 
         if(other.gameObject.CompareTag("Deadly")){
-            Death();
+            ReceiveDamage();
         }
         else if(other.gameObject.CompareTag("Water")){
             SwitchMode(MoveMode.Swim);

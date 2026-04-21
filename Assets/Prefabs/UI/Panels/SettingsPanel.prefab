@@ -205,8 +205,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4787309474418058667, guid: a983d04bdc0fc0a48a8174ba47c0eb77, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 5707218116961789024, guid: c5733f2daaaca4fc686ef9ed829797a2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -226,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 1070145673185773421, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_SpriteState.m_PressedSprite
       value: 
-      objectReference: {fileID: -3211643900061988856, guid: 3525fdab162097149b1a0b3db88d01ac, type: 3}
+      objectReference: {fileID: 5636714710885222486, guid: e9f45c6ea70cc4e1a9dad7f76aa58d2f, type: 3}
     - target: {fileID: 1070145673185773421, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -281,11 +281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1712493437984474928, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -125
+      value: -198.7862
       objectReference: {fileID: 0}
     - target: {fileID: 1712493437984474928, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 79.8765
       objectReference: {fileID: 0}
     - target: {fileID: 1712493437984474928, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -317,11 +317,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1712493437984474928, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1712493437984474928, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 100
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 1712493437984474928, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -338,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 2048034758383313241, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4362824080808508049, guid: a7fc62ab7df397b4cba255309f8c7397, type: 3}
+      objectReference: {fileID: -9078738786953738353, guid: e9f45c6ea70cc4e1a9dad7f76aa58d2f, type: 3}
     - target: {fileID: 2210627048349690024, guid: 0fcfc00668a12e7419b7795294d6439b, type: 3}
       propertyPath: m_text
       value: save
@@ -395,11 +395,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -77.0459
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 99.9999
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_LocalPosition.x
@@ -431,11 +431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83
+      value: -78.528
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -545,6 +545,10 @@ PrefabInstance:
       propertyPath: m_text
       value: sfx
       objectReference: {fileID: 0}
+    - target: {fileID: 8745794306875215554, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
+      propertyPath: onSprite
+      value: 
+      objectReference: {fileID: 5660285115890169063, guid: c5733f2daaaca4fc686ef9ed829797a2, type: 3}
     - target: {fileID: 8887791862788599729, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_Name
       value: SFXSetting
@@ -619,11 +623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -77.0459
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 95.5281
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_LocalPosition.x
@@ -655,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 2404531484059367604, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -777,6 +781,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Music
       objectReference: {fileID: 0}
+    - target: {fileID: 8745794306875215554, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
+      propertyPath: onSprite
+      value: 
+      objectReference: {fileID: 5660285115890169063, guid: c5733f2daaaca4fc686ef9ed829797a2, type: 3}
     - target: {fileID: 8887791862788599729, guid: 7b96b496e48c64e42a74d9b1073a7571, type: 3}
       propertyPath: m_Name
       value: MusicSetting
@@ -969,7 +977,6 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: d48f9b41672db0246a444f5d3ada9108, type: 2}
   musicSettings: {fileID: 11400000, guid: a5725b3250b6f6b4c86e47ebb10a81da, type: 2}
   sfxSettings: {fileID: 11400000, guid: 0e9c4a4225babb54baf8ec3fb92a6ed2, type: 2}
-  playerPrefsAudioSettingsSO: {fileID: 11400000, guid: 2772399425715f84282b35a352847e76, type: 2}
   musicToggle: {fileID: 368753291644006516}
   musicSlider: {fileID: 5371095458384565321}
   sfxToggle: {fileID: 216314923528374415}
